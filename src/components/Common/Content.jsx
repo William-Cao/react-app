@@ -1,14 +1,28 @@
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+import Loadable from 'react-loadable'
 
-import React from 'react';
-// import ReactDOM from 'react-dom';
+function Loadables (fun) {
+  return Loadable({
+    loader: fun,
+    loading: () => { return (<div></div>) }
+  });
+}
 
-export default class Login extends React.Component {
+const Login = Loadables(() => import('../Login/index'));
+
+
+class ContentMain extends React.Component {
   render () {
     return (
-      <div>
-        <a href='#/detail'>去detail</a>
-        <button onClick={() => this.props.history.push('detail')}>通过函11数方法跳转</button>
+      <div className="content">
+        <Switch>
+          <Route path='/' component={Login} />
+          <Route path='/index' component={Login} />
+        </Switch>
       </div>
     )
   }
 }
+
+export default ContentMain

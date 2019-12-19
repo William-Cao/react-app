@@ -5,7 +5,7 @@ import { Layout, Breadcrumb } from 'antd';
 
 import CommonSlider from "./components/Common/Slider";//导航
 import CommonHeader from "./components/Common/Header";//头部
-import CommonContent from './components/Common/Content'//内容
+import CommonRouter from './components/Common/Content'//内容
 
 // console.log(CommonSlider)
 const { Header, Content, Sider } = Layout;
@@ -23,11 +23,11 @@ class LayoutBox extends Component {
           <CommonSlider />
           </Sider>
           <Layout style={{ padding: '24px' }}>
-            {/* <Breadcrumb style={{ margin: '16px 0' }}>
+            <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>Home</Breadcrumb.Item>
               <Breadcrumb.Item>List</Breadcrumb.Item>
               <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb> */}
+            </Breadcrumb>
             <Content
               style={{
                 background: '#fff',
@@ -36,7 +36,7 @@ class LayoutBox extends Component {
                 minHeight: 280,
               }}
             >
-              <CommonContent />
+              <CommonRouter />
           </Content>
           </Layout>
         </Layout>
