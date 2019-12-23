@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
-import 'antd/dist/antd.css';
-import { Layout, Breadcrumb } from 'antd';
+import { Layout } from 'antd';
 
 import CommonSlider from "./components/Common/Slider";//导航
 import CommonHeader from "./components/Common/Header";//头部
@@ -20,14 +19,9 @@ class LayoutBox extends Component {
         </Header>
         <Layout>
           <Sider width={200} style={{ background: '#fff' }}>
-          <CommonSlider />
+            <CommonSlider />
           </Sider>
           <Layout style={{ padding: '24px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Home</Breadcrumb.Item>
-              <Breadcrumb.Item>List</Breadcrumb.Item>
-              <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb>
             <Content
               style={{
                 background: '#fff',
@@ -37,7 +31,7 @@ class LayoutBox extends Component {
               }}
             >
               <CommonRouter />
-          </Content>
+            </Content>
           </Layout>
         </Layout>
       </Layout >

@@ -5,8 +5,8 @@ export default class Login extends React.Component {
   render () {
     return (
       <div>
-        <a href='#/detail'>去detail</a>
-        <button onClick={() => this.props.history.push('detail')}>123</button>
+        {/* <a href='#/detail'>去detail</a> */}
+        <button onClick={() => this.props.history.push('detail')}>login</button>
       </div>
     )
   }
