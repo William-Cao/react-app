@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch ,Redirect} from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Loadable from 'react-loadable'
 
 function Loadables (fun) {
@@ -10,7 +10,6 @@ function Loadables (fun) {
 }
 
 const Login = Loadables(() => import('../Login/index'));
-const Login1 = Loadables(() => import('../Login/index.1'));
 
 
 class ContentMain extends React.Component {
@@ -19,8 +18,7 @@ class ContentMain extends React.Component {
     return (
       <div className="content">
         <Switch>
-          <Route exact path='/index' component={Login1} />
-          <Route path='/index/qqq' component={Login} />
+          <Route path='/index' component={Login} />
           <Redirect to="/index" />
         </Switch>
       </div>

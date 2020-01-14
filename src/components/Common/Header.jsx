@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Icon } from 'antd';
 
 let MenuIcon = {
-  backgroundColor: 'red',
+  // backgroundColor: 'red',
   color: 'white',
   fontSize: 40,
   
