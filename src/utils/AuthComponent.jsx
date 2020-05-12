@@ -39,11 +39,11 @@ export let AuthComponent = ComposedComponent =>class WrapComponent extends Compo
 
 
 //定义组件，页面引用
-const AuthButton = AuthComponent(Button);
+// const AuthButton = AuthComponent(Button);
 
-export default class DemoPage extends Component {
-constructor(props) {}
-render() {
-   return <AuthButton auth="user:add" type="primary" onClick={this.dosomething}>新增用户</AuthButton>
-  }
-}
+// export default class DemoPage extends Component {
+// constructor(props) {}
+// render() {
+//    return <AuthButton auth="user:add" type="primary" onClick={this.dosomething}>新增用户</AuthButton>
+//   }
+// }
