@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import App from '../Layout';
-import Login from '../components/Login/login';
+import Login from '../components/Login';
 
 const BasicRoute = () => (
   <HashRouter>
